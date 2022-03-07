@@ -111,8 +111,7 @@ exports.postLogin = (req, res, next) => {
                 { expiresIn: '7200s' }
             );
             res.cookie("token", token, {
-                maxAge: 7200 * 1000,
-                httpOnly: true,
+                maxAge: 7200 * 1000
             });
             res.redirect('/');
         })
