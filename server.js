@@ -51,7 +51,7 @@ app.use((error, req, res, next) => {
 
 mongoose
     .connect(
-        "mongodb+srv://kushal:kushal@cluster0.cn3d6.mongodb.net/userAuth?retryWrites=true&w=majority"
+        process.env.MONGODB_URI
     )
     .then(result => {
         app.listen(port, () => {
