@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="user-details__wrapper">
+            <h1 class="title">USER DETAILS</h1>
+            <div class="user-details">
+                <span class="user-details__item">
+                    <p>First Name</p>
+                    <!-- <p>:</p> -->
+                    <p class="item-data"><%= user.firstName %></p>
+                </span>
+                <span class="user-details__item">
+                    <p>Last Name</p>
+                    <!-- <p>:</p> -->
+                    <p class="item-data"><%= user.lastName %></p>
+                </span>
+                <span class="user-details__item">
+                    <p>Email </p>
+                    <!-- <p>:</p> -->
+                    <p class="item-data" style="text-transform: lowercase;"><%= user.email %></p>
+                </span>
+            </div>
+        </div>
+        <div class="edit-user">
+            <form class="logout-form" action="/auth/logout" method="POST">
+                <button class="logout-button">LOGOUT</button>
+            </form>
+            <form action="/user/update" method="GET">
+                <button>EDIT USER</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html> 

@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    background-color: rgb(25, 170, 170);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.user-details__wrapper {
+    background-color: teal;
+    width: 600px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 10px 0 20px 0;
+}
+
+.user-details {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-details > form{
+    margin: 0;
+    padding: 0;
+}
+
+.user-details__item {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.user-details__item > label {
+    flex: 1;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    justify-items: flex-end;
+}
+
+.user-details__item > input {
+    flex: 1;
+    background-color: white;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(243, 242, 242);
+    padding-left: 20px;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.user-details > form > button {
+    margin-top: 50px;
+    width: 100%;
+    background-color: white;
+    color: teal;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-profile {
+    margin: 50px 0 10px 0;
+    display: flex;
+    align-items: center;
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.user-profile > form {
+    flex: 1;
+}
+
+.user-profile > form > button {
+    width: 100%;
+    background-color: white;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    color: teal;
+    border-radius: 5px;
+}

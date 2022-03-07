@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <% if (errorMessage) { %>
+            <div class="user-message user-message--error">
+                <%= errorMessage %>
+            </div>
+        <% } %>
+        <div class="register-wrapper">
+            <h1 class="title">REGISTER</h1>
+            <form action="/auth/register" method="POST">
+                <input 
+                    type="text" 
+                    name="firstName" 
+                    placeholder="First Name"
+                    >
+                <input 
+                    type="text" 
+                    name="lastName" 
+                    placeholder="Last name"
+                    >
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Email"
+                    >
+                <input 
+                    type="password" 
+                    name="password" 
+                    placeholder="Password"
+                    >
+                <button type="submit">REGISTER</button>
+            </form>
+            <div class="switch-container">
+                <p>Already have an account? </p>
+                <a href="/auth/login">Login</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

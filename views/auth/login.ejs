@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    
+    <div class="main-container">
+        <% if (errorMessage) { %>
+            <div class="user-message user-message--error">
+                <%= errorMessage %>
+            </div>
+        <% } %>
+        <div class="login-wrapper">
+            <h1 class="title">LOGIN</h1>
+            <form action="/auth/login" method="POST">
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Email">
+                <input 
+                    type="password" 
+                    name="password" 
+                    placeholder="Password">
+                <button type="submit">LOGIN</button>
+            </form>
+            <div class="switch-container">
+                <p>Don't have an account? </p>
+                <a href="/auth/register">Register</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

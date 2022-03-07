@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    background-color: rgb(25, 170, 170);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.user-details__wrapper {
+    background-color: teal;
+    width: 600px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 2%;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 10px 0 20px 0;
+}
+
+.user-details {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-details__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.user-details__item > p {
+    flex: 1;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    justify-items: flex-end;
+}
+
+.email-data {
+    color: black;
+    text-transform: lowercase;
+}
+
+.edit-user {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    width: 600px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.edit-user > form {
+    flex: 1;
+}
+
+.logout-form {
+    margin-right: 20px;
+}
+
+.edit-user > form > button {
+    width: 100%;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    color: teal;
+    border-radius: 5px;
+}
